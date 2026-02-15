@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sistema ASSGA - Terminal</title>
+    <title>Terminal ASSGA</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -17,24 +17,38 @@
     <button class="menu-toggle" onclick="toggleMenu()">☰</button>
 
     <nav class="menu" id="menu">
-        <a href="#">Home</a>
+        <a href="#">🏠 Home</a>
         <div class="dropdown">
-            <a href="#" onclick="toggleDropdown(event)">Informações ▾</a>
+            <a href="#" onclick="toggleDropdown(event)">ℹ️ Informações ▾</a>
             <div class="dropdown-content" id="dropdownInfo">
-                <a href="#">História</a>
-                <a href="#">Diretoria</a>
-                <a href="#">Estatuto</a>
-                <a href="#">Contato</a>
+                <a href="#">📜 História</a>
+                <a href="#">👨‍💼 Diretoria</a>
+                <a href="#">📖 Estatuto</a>
+                <a href="#">📬 Contato</a>
             </div>
         </div>
-        <a href="#">Eventos</a>
-        <a href="#">Cursos</a>
-        <a href="#" class="btn-entrar">Entrar</a>
+        <div class="dropdown">
+            <a href="#" onclick="toggleDropdown(event)">📅 Eventos ▾</a>
+            <div class="dropdown-content" id="dropdownEventos">
+                <a href="#">Calendário</a>
+                <a href="#">Inscrições</a>
+                <a href="#">Resultados</a>
+            </div>
+        </div>
+        <div class="dropdown">
+            <a href="#" onclick="toggleDropdown(event)">🎓 Cursos ▾</a>
+            <div class="dropdown-content" id="dropdownCursos">
+                <a href="#">Cursos Online</a>
+                <a href="#">Workshops</a>
+                <a href="#">Certificados</a>
+            </div>
+        </div>
+        <a href="#" class="btn-entrar">🔑 Entrar</a>
     </nav>
 </header>
 
 <section class="terminal-content">
-    <h2 class="titulo-secao">Últimos Pagamentos</h2>
+    <h2 class="titulo-secao">💰 Últimos Pagamentos</h2>
     <table>
         <tr>
             <th>Sócio</th>
@@ -46,24 +60,24 @@
             <td>João Silva</td>
             <td>12/02/2026</td>
             <td>R$ 150,00</td>
-            <td><span class="pago">Pago</span></td>
+            <td><span class="pago">✔ Pago</span></td>
         </tr>
         <tr>
             <td>Maria Souza</td>
             <td>10/02/2026</td>
             <td>R$ 200,00</td>
-            <td><span class="atrasado">Não Pago</span></td>
+            <td><span class="atrasado">✖ Não Pago</span></td>
         </tr>
     </table>
 
-    <h2 class="titulo-secao">Últimas Notícias</h2>
+    <h2 class="titulo-secao">📰 Últimas Notícias</h2>
     <div class="card">
-        <h3>Assembleia Geral</h3>
-        <p>Haverá uma reunião extraordinária do conselho na próxima sexta-feira...</p>
+        <h3>📌 Assembleia Geral</h3>
+        <p>Haverá uma reunião extraordinária do conselho na próxima sexta-feira às 18h.</p>
     </div>
     <div class="card">
-        <h3>Nova Diretoria</h3>
-        <p>Foram eleitos os novos membros da diretoria para o ano de 2026...</p>
+        <h3>🏆 Nova Diretoria</h3>
+        <p>Foram eleitos os novos membros da diretoria para o ano de 2026. Confira a lista completa.</p>
     </div>
 </section>
 
