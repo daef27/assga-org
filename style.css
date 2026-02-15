@@ -1,0 +1,153 @@
+/* Terminal style */
+body {
+    background-color: #0a0a0a;
+    color: #33ff33;
+    font-family: 'Courier New', Courier, monospace;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #33ff33;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.terminal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #000;
+    border-bottom: 2px solid #33ff33;
+    padding: 10px 20px;
+}
+
+.logo-area {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-area img {
+    height: 40px;
+}
+
+.cnpj {
+    font-size: 0.9rem;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.menu-toggle {
+    display: none;
+    font-size: 1.8rem;
+    background: none;
+    border: none;
+    color: #33ff33;
+    cursor: pointer;
+}
+
+/* Dropdown */
+.dropdown {
+    position: relative;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #001100;
+    top: 25px;
+    left: 0;
+    min-width: 150px;
+    border: 1px solid #33ff33;
+    border-radius: 5px;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 8px 12px;
+}
+
+.dropdown-content a:hover {
+    background-color: #004400;
+}
+
+/* Botão Entrar */
+.btn-entrar {
+    border: 1px solid #33ff33;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+.btn-entrar:hover {
+    background-color: #004400;
+}
+
+/* Conteúdo */
+.terminal-content {
+    padding: 20px;
+}
+
+.titulo-secao {
+    margin-bottom: 10px;
+    color: #00ff00;
+    border-bottom: 1px solid #33ff33;
+    padding-bottom: 3px;
+}
+
+/* Tabela */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
+    border: 1px solid #33ff33;
+    padding: 10px;
+}
+
+th {
+    background-color: #001100;
+}
+
+.pago {
+    color: #00ff00;
+    font-weight: bold;
+}
+
+.atrasado {
+    color: #ff3300;
+    font-weight: bold;
+}
+
+/* Cards */
+.card {
+    border: 1px solid #33ff33;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .menu {
+        display: none;
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+}

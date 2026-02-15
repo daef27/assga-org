@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema ASSGA - Terminal</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="terminal-header">
+    <div class="logo-area">
+        <img src="logo.png" alt="Logo ASSGA">
+        <span class="cnpj">CNPJ nº 00.000.000/0001-00</span>
+    </div>
+
+    <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+
+    <nav class="menu" id="menu">
+        <a href="#">Home</a>
+        <div class="dropdown">
+            <a href="#" onclick="toggleDropdown(event)">Informações ▾</a>
+            <div class="dropdown-content" id="dropdownInfo">
+                <a href="#">História</a>
+                <a href="#">Diretoria</a>
+                <a href="#">Estatuto</a>
+                <a href="#">Contato</a>
+            </div>
+        </div>
+        <a href="#">Eventos</a>
+        <a href="#">Cursos</a>
+        <a href="#" class="btn-entrar">Entrar</a>
+    </nav>
+</header>
+
+<section class="terminal-content">
+    <h2 class="titulo-secao">Últimos Pagamentos</h2>
+    <table>
+        <tr>
+            <th>Sócio</th>
+            <th>Data</th>
+            <th>Valor</th>
+            <th>Status</th>
+        </tr>
+        <tr>
+            <td>João Silva</td>
+            <td>12/02/2026</td>
+            <td>R$ 150,00</td>
+            <td><span class="pago">Pago</span></td>
+        </tr>
+        <tr>
+            <td>Maria Souza</td>
+            <td>10/02/2026</td>
+            <td>R$ 200,00</td>
+            <td><span class="atrasado">Não Pago</span></td>
+        </tr>
+    </table>
+
+    <h2 class="titulo-secao">Últimas Notícias</h2>
+    <div class="card">
+        <h3>Assembleia Geral</h3>
+        <p>Haverá uma reunião extraordinária do conselho na próxima sexta-feira...</p>
+    </div>
+    <div class="card">
+        <h3>Nova Diretoria</h3>
+        <p>Foram eleitos os novos membros da diretoria para o ano de 2026...</p>
+    </div>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
